@@ -8,83 +8,105 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #ddeefc;
+  height: 100vh;
+  padding-top: 200px;
 }
 
 .my-form {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 25px;
+  width: 600px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 35px;
 }
 
-.card {
-  margin: 25px;
-  width: 430px;
-  height: 270px;
-  background-color: rebeccapurple;
+form {
+  width:100%;
+}
+
+form label{
+  display: block;
+  color: #1a3b5d;
+  font-size: 14px;
+}
+
+form input, form select {
+  width: 100%;
+  margin: 0 0 20px 0;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 15px;
+  border: 1px solid #1a3c5d25;
+}
+
+input:focus, select:focus {
+  outline: none !important;
+  border: 1px solid #2364d2;
+  box-shadow: 3px 10px 10px 0px rgb(35 100 210 / 10%);
+}
+
+.sideBySide {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "item1 item2"
-  "item3 item3"
-  "item4 item5"
-  "item6 item7"
-  ;
+  "expires ccv";
 }
 
-.item1 {
-  grid-area: item1;
-  background: lightcoral;
-  width: 100%;
+.sideBySide input, .sideBySide select {
+  width: 150px;
 }
 
-.item2 {
-  grid-area: item2;
-  background: rgb(29, 46, 100);
-  width: 100%;
-}
-
-.item3 {
-  grid-area: item3;
-  background: rgb(47, 21, 21);
-  width: 100%;
+.ccv {
+  grid-area: ccv;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
-.item4 {
-  grid-area: item4;
-  background: rgb(41, 133, 29);
+.ccv label {
+  margin: 0;
+}
+
+
+
+.expires select, .ccv input {
+  width: 40%;
+  margin: 0 0 20px 0px;
+  height: 50px;
+  padding: 5px 30px 5px 15px;
+}
+
+.ccv input {
+  width: 90%;
+  margin: 0;
+}
+
+.expires select {
+  grid-area: expires;
+  -webkit-appearance: none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAeCAYAAABuUU38AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUxJREFUeNrM1sEJwkAQBdCsngXPHsQO9O5FS7AAMVYgdqAd2IGCDWgFnryLFQiCZ8EGnJUNimiyM/tnk4HNEAg/8y6ZmMRVqz9eUJvRaSbvutCZ347bXVJy/ZnvTmdJ862Me+hAbZCTs6GHpyUi1tTSvPnqTpoWZPUa7W7ncT3vK4h4zVejy8QzM3WhVUO8ykI6jOxoGA4ig3BLHcNFSCGqGAkig2yqgpEiMsjSfY9LxYQg7L6r0X6wS29YJiYQYecemY+wHrXD1+bklGhpAhBDeu/JfIVGxaAQ9sb8CI+CQSJ+QmJg0Ii/EE2MBiIXooHRQhRCkBhNhBcEhLkwf05ZCG8ICCOpk0MULmvDSY2M8UawIRExLIQIEgHDRoghihgRIgiigBEjgiFATBACAgFgghEwSAAGgoBCBBgYAg5hYKAIFYgHBo6w9RRgAFfy160QuV8NAAAAAElFTkSuQmCC);
+  background-size: 12px;
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+form button {
   width: 100%;
-}
-
-.item5 {
-  grid-area: item5;
-  background: rgb(126, 20, 20);
-  width: 100%;
-}
-
-.item6 {
-  grid-area: item6;
-  background: rgb(104, 27, 97);
-  width: 100%;
-}
-
-.item7 {
-  grid-area: item7;
-  background: rgb(229, 240, 128);
-  width: 100%;
-}
-
-.my-form {
-  width: 600px;
-  height: 800px;
-  background-color: goldenrod;
-}
-
-.card-item__chip {
-  padding: 10px 0 0 10px;
-  width: 50%;
+  height: 55px;
+  margin: 20px 0;
+  font-size: 22px;
+  background: #2364d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 10px 20px 0px rgb(35 100 210 / 30%);
 }

@@ -1,0 +1,97 @@
+
+.card {
+  margin: -130px 0 50px 0;
+  padding: 25px 15px;
+  width: 430px;
+  height: 270px;
+  background-image: url("https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/14.jpeg");
+  box-shadow: 7px 6px 10px rgb(14 42 90 / 80%);
+  text-shadow: 7px 6px 10px rgb(14 42 90 / 80%);
+  border-radius: 15px;
+  font-size: 18px;
+  color: #fff;
+  font-family: monospace;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "item1 item2"
+  "item3 item3"
+  "item4 item5"
+  "item6 item7"
+  ;
+}
+
+.item1 {
+  grid-area: item1;
+  width: 100%;
+}
+
+.item2 {
+  grid-area: item2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.item2 img {
+  margin-top: 5px;
+  width: 40%;
+}
+
+.item3 {
+  grid-area: item3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+}
+
+.item3 p {
+  text-transform: uppercase;
+  display: inline;
+  margin: 0 16px;
+}
+
+.item4 {
+  grid-area: item4;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 6px;
+}
+
+.item5 {
+  grid-area: item5;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 6px;
+}
+
+.item4, .item5 {
+  font-size: 13px;
+}
+
+.item6 {
+  grid-area: item6;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.item7 {
+  grid-area: item7;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-item__chip {
+  width: 33%;
+}
