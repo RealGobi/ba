@@ -44,7 +44,7 @@ form input, form select {
   border: 1px solid #1a3c5d25;
 }
 
-input:focus, select:focus {
+input:focus, select:focus, button:focus {
   outline: none !important;
   border: 1px solid #2364d2;
   box-shadow: 3px 10px 10px 0px rgb(35 100 210 / 10%);
@@ -109,4 +109,8 @@ form button {
   border: none;
   border-radius: 5px;
   box-shadow: 3px 10px 20px 0px rgb(35 100 210 / 30%);
+}
+
+.errorInput, .errorInput:focus{
+  border: 1px solid #eb0f1a !important;
 }
